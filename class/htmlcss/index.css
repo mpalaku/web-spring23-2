@@ -1,20 +1,21 @@
-table{
-    border-collapse: collapse; width:100%"
+table {
+	border-collapse: collapse;
+	width: 100%;
 }
-th,td {
-    border: 1px solid black;
+th,
+td {
+	border: 1px solid black;
 }
 
-ul,ol{
+/* ul,ol{
     list-style: upper-roman;
+} */
+
+body {
+	margin: 10;
 }
 
-body{
-    margin: 10;
-}
-
-
-div{
-    border: 1px solid black;
-    height: 20px;
+div {
+	border: 1px solid black;
+	height: 20px;
 }
