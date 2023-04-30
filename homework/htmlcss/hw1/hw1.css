@@ -1,0 +1,49 @@
+.awesome {
+	width: 100%;
+	height: 1.5em;
+	background-color: #125ba0;
+
+	position: relative;
+	margin: 0;
+	padding-left: 10px;
+	padding-top: 10px;
+	color: #fff;
+}
+.body {
+	width: 100%;
+	height: 1.5em;
+	background-color: #5997d0;
+	position: relative;
+	margin: 0;
+	padding-left: 10px;
+	padding-top: 5px;
+	color: #fff;
+}
+
+#text1 {
+	background-color: white;
+	width: 100%;
+	padding-left: 10px;
+	text-align: left;
+}
+#text2 {
+	background-color: white;
+	width: 100%;
+	padding-left: 10px;
+}
+#text3 {
+	background-color: white;
+	width: 100%;
+	padding-left: 10px;
+	padding-top: 5px;
+}
+#text4 {
+	background-color: white;
+	width: 100%;
+	padding-left: 10px;
+}
+#line {
+	background-color: #125ba0;
+	height: 1px;
+	border-width: 0;
+}
