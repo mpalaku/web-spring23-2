@@ -1,0 +1,121 @@
+.canvas {
+	height: 700px;
+	width: 1420px;
+	background-color: rgb(1, 10, 17);
+	display: flex;
+}
+.left-canvas {
+	width: 290px;
+	height: 100%;
+	background-color: rgb(59, 13, 157);
+}
+.travel {
+	font-size: 1em;
+	text-align: justify;
+	color: rgb(228, 193, 126);
+	padding-block: 5px;
+	padding-inline: 35px;
+}
+.travels {
+	font-size: 1em;
+	text-align: justify;
+	color: rgb(237, 207, 152);
+	padding-top: 30px;
+	padding-bottom: 2px;
+	padding-inline: 35px;
+}
+.help {
+	font-size: 2em;
+	text-align: justify;
+	text-decoration: underline;
+	color: white;
+	padding-block: 30px;
+	padding-inline: 35px;
+}
+.helps {
+	font-size: 1em;
+	text-align: center;
+	color: white;
+	padding-top: 15px;
+	padding-inline: 35px;
+}
+.right-canvas {
+	width: 1130px;
+	height: 100%;
+	background-color: rgb(244, 194, 128);
+}
+.details {
+	font-size: 5em;
+	text-align: center;
+	color: white;
+	padding-block: 30px;
+	padding-inline: 35px;
+}
+#details {
+	font-size: 1em;
+	text-align: center;
+	color: green;
+	padding-block: 30px;
+	padding-inline: 35px;
+}
+.body1 {
+	font-size: 1em;
+	text-align: left;
+	color: black;
+	padding-bottom: 30px;
+	padding-inline: 35px;
+}
+.body2 {
+	font-size: 1em;
+	text-align: left;
+	color: black;
+	padding-inline: 35px;
+}
+.body3a {
+	font-size: 1em;
+	text-align: left;
+	color: black;
+	padding-inline: 35px;
+	padding-top: 30px;
+}
+.body3 {
+	font-size: 1em;
+	text-align: left;
+	color: black;
+	padding-inline: 35px;
+}
+.body4a {
+	font-size: 1em;
+	text-align: left;
+	color: black;
+	padding-inline: 35px;
+	padding-top: 30px;
+}
+.body4 {
+	font-size: 1em;
+	text-align: left;
+	color: black;
+	padding-inline: 35px;
+}
+.body5a {
+	font-size: 1em;
+	text-align: left;
+	color: black;
+	padding-inline: 35px;
+	padding-top: 30px;
+}
+#emaildetails {
+	color: blue;
+}
+
+.footer {
+	text-align: right;
+}
+
+#text1,
+#text2 {
+	text-decoration: underline;
+}
+.name {
+	text-align: center;
+}
