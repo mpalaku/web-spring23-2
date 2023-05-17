@@ -11,9 +11,9 @@ let membership;
 // JS has 5 primitive data types: string (enclosed in ""), number, boolean, undefined, null
 
 var myName = "tai"; // "tai" and "10" are both strings
-let age = 10; // 10 is a number, while "10" is a string - numbers can perform math operations
-let active = true; // true/false is boolean ; "true" is a string (enclosed in "")
-let membership; // declared a variable, but not assigned a value to it: JS auto. assign value of undefined
+// let age = 10; // 10 is a number, while "10" is a string - numbers can perform math operations
+// let active = true; // true/false is boolean ; "true" is a string (enclosed in "")
+// let membership; // declared a variable, but not assigned a value to it: JS auto. assign value of undefined
 console.log("before", membership);
 membership = "gold"; // reassignment
 console.log("after", membership);
