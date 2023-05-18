@@ -18,7 +18,7 @@ function multiply(hello) {
 }
 
 var hello = [6, 12, 18, 24, 30];
-var multipliedNumbers = multiplyBy100(hello);
+var multipliedNumbers = multiply(hello);
 
 console.log(multipliedNumbers);
 console.log(hello);
@@ -36,11 +36,11 @@ function multiplyGreater5(numbers) {
 }
 
 var numbers1 = [6, 7, 3, 6.4];
-var multipliedNumbers1 = multiplyBy100IfLengthGreaterThan5(numbers1);
-console.log(multipliedNumbers1); // Output: [1, 2, 3, 4, 5] (original array is not mutated)
+var multipliedNumbers1 = multiplyGreater5(numbers1);
+console.log(multipliedNumbers1);
 
 var numbers2 = [5, 53, 53, 62, 67, 23, 62, 35];
-var multipliedNumbers2 = multiplyBy100IfLengthGreaterThan5(numbers2);
+var multipliedNumbers2 = multiplyGreater5(numbers2);
 console.log(multipliedNumbers2);
 
 // question 4
@@ -48,9 +48,9 @@ console.log(multipliedNumbers2);
 function multiplyEvenBy100(numbers) {
 	return numbers.map(function (number) {
 		if (number % 2 === 0) {
-			return number * 100; // Multiply even numbers by 100
+			return number * 100;
 		} else {
-			return number; // Return odd numbers unchanged
+			return number;
 		}
 	});
 }
@@ -59,16 +59,14 @@ var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 var multipliedNumbers = multiplyEvenBy100(numbers);
 
 console.log(multipliedNumbers);
-// Output: [1, 200, 3, 400, 5, 600, 7, 800, 9, 1000]
-
 console.log(numbers);
 
 // question 5
-function countOccurrences(numbers, target) {
+function counting(occurence, times) {
 	var count = 0;
 
-	numbers.forEach(function (number) {
-		if (number === target) {
+	occurence.forEach(function (number) {
+		if (number === times) {
 			count++;
 		}
 	});
@@ -76,15 +74,24 @@ function countOccurrences(numbers, target) {
 	return count;
 }
 
-var numbers = [154, 657, 564, 561, 154, 678, 100, 154];
-var target = 154;
+var occurence = [154, 657, 564, 561, 154, 678, 100, 154];
+var times = 154;
 
-var occurrenceCount = countOccurrences(numbers, target);
+var occurrenceCount = counting(occurence, times);
 
 console.log(occurrenceCount);
 
+function count(array, target) {
+	return array.reduce(function (count, number) {
+		if (number === target) {
+			count++;
+		}
+		return count;
+	}, 0);
+}
+
 // question 6
-function checkType(input) {
+function checking(input) {
 	if (Array.isArray(input) || typeof input === "object") {
 		return "object";
 	} else {
@@ -92,7 +99,5 @@ function checkType(input) {
 	}
 }
 
-console.log(checkType([1, 2, 3])); // Output: "object"
-console.log(checkType({ key: "object" })); // Output: "object"
-console.log(checkType("Hello")); // Output: "It's something else"
-console.log(checkType(123)); // Output: "It's something else"
+console.log(checking([1, 2, 3]));
+console.log(checking("Hello"));
