@@ -48,22 +48,22 @@ console.log(keysArray);
 // question 4
 function calculateMaxProfit(stockPrices) {
 	if (stockPrices.length < 2) {
-		return 0; // If there are less than 2 prices, no profit can be made
+		return 0;
 	}
 
-	let maxProfit = 0; // Initialize the maximum profit to 0
-	let minPrice = stockPrices[0]; // Initialize the minimum price to the first stock price
+	let maxProfit = 0;
+	let minPrice = stockPrices[0];
 
 	for (let i = 1; i < stockPrices.length; i++) {
 		const currentPrice = stockPrices[i];
 		const profit = currentPrice - minPrice;
 
 		if (profit > maxProfit) {
-			maxProfit = profit; // Update the maximum profit if the current profit is higher
+			maxProfit = profit;
 		}
 
 		if (currentPrice < minPrice) {
-			minPrice = currentPrice; // Update the minimum price if the current price is lower
+			minPrice = currentPrice;
 		}
 	}
 
